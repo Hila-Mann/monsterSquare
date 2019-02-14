@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מפלצות בריבוע</title>
+    <meta name="description" content="מפלצות בריבוע" />
+    <meta name="keywords" content="מפלצות בריבוע, פרויקט סיום, משחק לימודי,הילה מן, ראובן דרעי,HIT,מפלצות" />
+    <meta name="author" content="ראובן דרעי והילה מן" />
+
+    <!-- CSS -->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="index.html">
+                <img id="logo" src="images/gameLogo.png"/> <!--הלוגו של המשחק שלכם-->
+                <p>מפלצות בריבוע</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h1>
+                 אודות
+            </h1>
+
+            <p>אפיון ופיתוח: הילה מן וראובן דרעי</p>
+            <p>
+                פותח במסגרת פרויקט בקורסים:
+                <br />
+                סביבות לימוד אינטראקטיביות 1 & אנימציה, תשע"ט
+
+            </p>
+            <a href="http://www.hit.ac.il/telem">
+                <img src="images/logoHIT.png" width="200" height="130" alt="לוגו HIT, מכון טכנולוגי חולון" />
+                <br />הפקולטה לטכנולוגיות למידה
+            </a>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>להופעת השאלה יש ללחוץ על אחד מהריבועים בלוח המשחק </p>
+            <ul class="howToPlayUl">
+
+                <li>
+                    במענה נכון על השאלה המופיעה- הריבוע יצבע בצבעי הדמות שלך
+                </li>
+                <li>
+                    במידה וטעית, הריבוע ישאר ריק והשאלה תופיע שוב בהמשך
+                </li>
+                <li>
+המנצח הוא השחקן שענה נכון על יותר שאלות וכבש יותר ריבועים                </li>
+            </ul>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="monsterSquare.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
