@@ -7229,8 +7229,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 				], lib.ribbed],
 				[2, "?באיזה שעה יש זווית ישרה בין מחוגי השעון", false, [
 					["4:00", false],
-					["6:00", true],
-					["9:00", false],
+					["6:00", false],
+					["9:00", true],
 					["11:00", false]
 				], lib.clock]
 			]]
