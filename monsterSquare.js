@@ -7288,7 +7288,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 		
 			//הגדרות עבור כפתור "בחר" - חלק מהקומפוננטה של הקומבו
 			forcombo.startbtn.alpha = 0.3;
-		
+			forcombo.cursor = "pointer";
+
 			//מאזין לשינוי ערכים בקומבו - שימו לב שהפרמטר השני, האינסטנס של הקומבו, הוגדר ידנית בתוך הקומפוננט
 			$("#dom_overlay_container").on("change", "#mycb", mycb_change);
 		}
@@ -7393,6 +7394,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 			randomBtn.x = 460;
 			randomBtn.y = 130;
 			randomBtn.name = "randomBtn";
+				randomBtn.cursor = "pointer";
+
 			randomBtn.visible = false;
 			nameOfPlayers.addChild(randomBtn);
 		} //createNamesScene
@@ -7568,6 +7571,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 			var nextBtn = new lib.startBtn();
 			nextBtn.x = 460;
 			nextBtn.y = 130;
+				nextBtn.cursor = "pointer";
+
 			nextBtn.name = "nextBtn";
 			nameOfPlayers.addChild(nextBtn);
 			nextBtn.addEventListener("click", createMap);
@@ -7712,6 +7717,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 							myArea.clickR = false;
 							myArea.visible = false;
 							myArea.stop();
+							myArea.cursor = "pointer";
+
 							myArea.addEventListener("click", clickOnArea);
 							myArea.addEventListener("mouseover", hoverArea);
 							myArea.addEventListener("mouseout", hoverAreaOut);
@@ -7837,6 +7844,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 		
 				distractors.name = "distractors" + i;
 				qArea.addChild(distractors);
+						distractors.cursor = "pointer";
+
 				distractors.addEventListener("click", chooseDistractor);
 				distractors.addEventListener("mouseover", hoverDistractor);
 				distractors.addEventListener("mouseout", hoverDistractorOut);
@@ -7940,6 +7949,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 			var checkBtn = new lib.cheakBtn();
 			checkBtn.x = -470;
 			checkBtn.y = 230;
+				checkBtn.cursor = "pointer";
+
 			checkBtn.name = "checkBtn";
 			qArea.addChild(checkBtn);
 			checkBtn.addEventListener("click", clickCheck);
@@ -8165,6 +8176,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 			var nextBtn = new lib.nextBtn();
 			nextBtn.x = -470;
 			nextBtn.y = 230;
+				nextBtn.cursor = "pointer";
+
 			nextBtn.name = "nextBtn";
 			qArea.addChild(nextBtn);
 			if ((counterArea[0] + counterArea[1]) == games[mychoice][2].length) {
@@ -8505,6 +8518,8 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 				myBtn.x = 470;
 				myBtn.y = 130 + i * 60;
 				myBtn.name = "btn" + i;
+						myBtn.cursor = "pointer";
+
 				finalScore.addChild(myBtn);
 		
 				if (i == 0) {
