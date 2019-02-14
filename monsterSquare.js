@@ -7242,7 +7242,7 @@ p.nominalBounds = new cjs.Rectangle(-143,-124,308.3,265);
 		createjs.Sound.registerSound("https://hila-mann.github.io/monsterSquare/sounds/worngAnswer.mp3", "worngAnswer");
 		createjs.Sound.stop("worngAnswer");
 		
-		createjs.Sound.registerSound("/https://hila-mann.github.io/monsterSquaresounds/clock10.mp3", "clock10");
+		createjs.Sound.registerSound("/https://hila-mann.github.io/monsterSquaresounds/sounds/clock10.mp3", "clock10");
 		createjs.Sound.stop("clock10");
 		
 		createjs.Sound.registerSound("https://hila-mann.github.io/monsterSquare/sounds/switchTurn.mp3", "switchTurn");
